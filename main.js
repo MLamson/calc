@@ -16,36 +16,52 @@ add.onclick = function(){
 	num_two_value = num_two.value;
 	num_one_value = Number(num_one_value);
 	num_two_value = Number(num_two_value);
-	if (isNaN(num_one_value)){
-	console.log('not a number')
-} else {answer_value = num_one_value + num_two_value;
-  answer.innerHTML = answer_value;
-  }
-}
+	if (isNaN(num_one_value) || isNaN(num_two_value)){
+	answer.innerHTML = 'Please reload page and enter numbers only.';
+} else 
+	{answer_value = num_one_value + num_two_value;
+	  answer.innerHTML = answer_value;
+	  }
+	}
 
 subtract.onclick = function(){
 	num_one_value = num_one.value;
 	num_two_value = num_two.value;
 	num_one_value = Number(num_one_value);
 	num_two_value = Number(num_two_value);
+	if (isNaN(num_one_value) || isNaN(num_two_value)){
+	answer.innerHTML = 'Please reload page and enter numbers only.';
+} else 
+	{
 	answer_value = num_one_value - num_two_value;
   answer.innerHTML = answer_value;
+}
 }
 multiply.onclick = function(){
 	num_one_value = num_one.value;
 	num_two_value = num_two.value;
 	num_one_value = Number(num_one_value);
 	num_two_value = Number(num_two_value);
+	if (isNaN(num_one_value) || isNaN(num_two_value)){
+	answer.innerHTML = 'Please reload page and enter numbers only.';
+} else 
+	{
 	answer_value = num_one_value * num_two_value;
   answer.innerHTML = answer_value;
+}
 }
 divide.onclick = function(){
 	num_one_value = num_one.value;
 	num_two_value = num_two.value;
 	num_one_value = Number(num_one_value);
 	num_two_value = Number(num_two_value);
+	if (isNaN(num_one_value) || isNaN(num_two_value)){
+	answer.innerHTML = 'Please reload page and enter numbers only.';
+} else 
+	{
 	answer_value = num_one_value / num_two_value;
   answer.innerHTML = answer_value;
+}
 }
 
 

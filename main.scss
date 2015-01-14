@@ -3,9 +3,19 @@ body {
 }
 
 .container {
+	background-color:HSLA(334, 60%, 68%, 1);
 	padding-top:20px;
 	width:350px;
 	margin: auto;
 	border: 5px solid lightgrey;
 	text-align: center;
-}
+
+	.answer {
+		padding:10px;
+	}
+	input {
+		background-color:HSLA(201, 92%, 65%, 1);
+		border-radius:10px;
+		border: 3px solid black;
+	}
+}//.container close brace
