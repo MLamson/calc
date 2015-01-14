@@ -52,6 +52,7 @@ divide.onclick = function(){
 
 
 
+
 /* 1. Watch for button click
 	2. When click happens grab input form num_one 
 	and num_two fields.
